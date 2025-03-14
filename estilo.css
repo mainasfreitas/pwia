@@ -3,8 +3,9 @@ div{
 }
 
 html, body{
-    margin: o;
-    padding: o;
+    margin: 0;
+    padding: 0;
     height: 100%;
-    background-color: azure;
+    background-color: #CCCCCC;
+
 }

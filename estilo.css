@@ -2,24 +2,29 @@ div{
     
 }
 
+
 html, body{
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: rgb(255, 200, 180);
-
+    background-color: #ffcdbb;
 }
+
+
 .card{
    width:268px;
     height:474px;
     background-color: #ffffff;
     
 }
+
+    
 .img-card{
     width: 268px;
     height: 168px;
     margin-top: 50px;
 }
+
 
 .descricao{
     font-size: 13px;
@@ -29,6 +34,8 @@ html, body{
     margin-bottom: 50px;
 
 }
+
+
 .preco{
     font-size: 25px;
     font-family: Arial;
@@ -36,12 +43,15 @@ html, body{
     font-weight: bold;
     padding: 10px 5px;
 }
+
+
 .pagamento{
     color: coral;
     font-family: Arial;
     padding: 10px 5px;
     font-size: 14px;
 }
+
 
 .botao-card{
     background-color: #ff6500;
@@ -53,6 +63,37 @@ html, body{
     text-align: center;
 }
 
+
 .botao-comprar{
     padding: 10px 5px;
+}
+
+
+.menu{
+    background-color: #effaff;
+    color: black;
+    border: 1px solid;
+    display: flex;
+
+}
+
+
+.item-menu{
+    list-style: none;
+    padding: 10px 20px;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+.item-menu:hover{
+    background-color: rgb(197, 197, 197);
+    border: 1px solid;
+    color: cornflowerblue;
+}
+
+
+.Link-menu{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
 }

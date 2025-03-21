@@ -18,7 +18,7 @@ html, body{
     
 }
 
-    
+
 .img-card{
     width: 268px;
     height: 168px;
@@ -87,7 +87,7 @@ html, body{
 
 .item-menu:hover{
     background-color: rgb(197, 197, 197);
-    border: 1px solid;
+    border: 2px solid;
     color: cornflowerblue;
 }
 

@@ -70,7 +70,7 @@ html, body{
 
 
 .menu{
-    background-color: #effaff;
+    background-color: #E0FFFF	;
     color: black;
     border: 1px solid;
     display: flex;
@@ -88,7 +88,7 @@ html, body{
 .item-menu:hover{
     background-color: rgb(197, 197, 197);
     border: 2px solid;
-    color: cornflowerblue;
+    color: #6495ED;
 }
 
 

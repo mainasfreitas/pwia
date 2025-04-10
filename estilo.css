@@ -8,13 +8,20 @@ html, body{
     padding: 0;
     height: 100%;
     background-color: #ffcdbb;
+   
 }
 
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .card{
-   width:268px;
+    width:268px;
     height:474px;
     background-color: #ffffff;
+    
+
     
 }
 

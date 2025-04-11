@@ -7,21 +7,30 @@ html, body{
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #ffcdbb;
+    background-color: #fdc7c7;
    
 }
 
+
+.imagem{
+    width: 200px;
+}
+
 main{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+  
 }
 
 .card{
     width:268px;
     height:474px;
     background-color: #ffffff;
-    
-
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 3%; 
+   
     
 }
 

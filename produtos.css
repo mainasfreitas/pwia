@@ -1,0 +1,62 @@
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f5bdbd;
+   
+}
+
+
+.imagem{
+    width: 200px;
+}
+
+
+.dados-produto{
+border:  2px solid;
+width: 800px;
+display: flex;
+
+
+}
+
+.p1{
+  width: 500px;
+}
+
+
+.p2{
+
+}
+
+
+
+.img-produto{
+background-color: crimson;
+
+}
+
+.info-produto{
+
+}
+
+.titulo-produto{
+background-color: chocolate;
+}
+
+.valor-produto{
+background-color: aqua;
+}
+
+.add-produto-carrinho{
+background-color: chartreuse;
+}
+
+.descricao-produto{
+ background-color: blueviolet;
+}
+
+.lista-personalizada{
+    list-style:none  ;
+}

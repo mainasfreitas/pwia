@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Contagem Regressiva Mega-Sena</title>
+</head>
+<body>
+  <h2>Contagem Regressiva para ganhar na Mega-Sena:</h2>
+  <div id="contagem"></div>
+
+  <script>
+    const div = document.getElementById("contagem");
+    for (let i = 50; i >= 1; i--) {
+      div.innerHTML += `Eu vou ganhar em ${i} dias!<br>`;
+    }
+  </script>
+</body>
+</html>

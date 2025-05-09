@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Números Pares até 512</title>
+</head>
+<body>
+  <h2>Números Pares de 0 até 512:</h2>
+  <div id="pares"></div>
+
+  <script>
+    const div = document.getElementById("pares");
+    for (let i = 0; i <= 512; i += 2) {
+      div.innerHTML += i + " ";
+    }
+  </script>
+</body>
+</html>

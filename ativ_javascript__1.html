@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Verificador de Número</title>
+</head>
+<body>
+  <h2>Digite um número:</h2>
+  <input type="number" id="numero">
+  <button onclick="verificarNumero()">Verificar</button>
+  <p id="resultado"></p>
+
+  <script>
+    function verificarNumero() 
+    {
+      const input = document.getElementById('numero').value;
+      const numero = parseFloat(input);
+      let resultado = "";
+
+      if (input === "") {
+        resultado = "Por favor, digite um número.";
+      } else if (isNaN(numero)) {
+        resultado = "Valor inválido. Digite um número válido.";
+      } else if (numero > 0) {
+        resultado = "O número é positivo.";
+      } else if (numero < 0) {
+        resultado = "O número é negativo.";
+      } else {
+        resultado = "O número é zero.";
+      }
+
+      document.getElementById('resultado').textContent = resultado;
+    }
+  </script>
+</body>
+</html>

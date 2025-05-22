@@ -46,14 +46,15 @@
                         "Thiago", "Leonardo",
                         
                         ]
-            alert( 
-                nomes.length + " - " +
-                nomes[0] + " - " +
-                nomes[1] + " - " +
-                nomes[numeroAleatorio(13)]
-        )
-        
-        
+           // alert( nomes[numeroAleatorio(14)])   
+
+
+        for(var i = 0; i <nomes.length; i++)
+        {
+            document.write("<br>"+nomes[i])
+        }
+
+
         function numeroAleatorio(numeroMaximo)
         {
             return Math.floor(Math.random() * numeroMaximo)

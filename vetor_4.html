@@ -18,7 +18,6 @@
             
       </ul>
 
-      
 
       <script>
             function adicionarImagens()
@@ -60,9 +59,46 @@
             return Math.floor(Math.random() * numeroMaximo)
         }
             
+        nomes.reverse();//  Inverte a ordm do elemento
+        nomes.shift();//    Remove o primeiro elemento
+        nomes.unshift();//  Adiciona 0 no inicio
+        nomes.pop();//  Remove o último elemento
+        nomes.push();// Adiciona x no final
+        
 
+        nomes.forEach(
+            (valor,indice) => {
+                document.write("indice: "+indice+"Valor é: "+valor+ "<br>")
+            }           
+        );
+
+            exibirLista(nomes)
+            nomes.unshift("Novo nome no inicio da lista");// Adiciona 0 no inicio
+            exibirLista(nomes)
+            nomes.shift();// Remove o primeiro elemento
+            exibirLista(nomes)
+            nomes.push("Joaquim do Final da lista");// Adiciona x no final
+            exibirLista(nomes)
+            nomes.pop()// Remove o último elemento
+            exibirLista(nomes)
+
+
+
+
+        function exibirLista(lista)
+            {
+                document.write("<hr>")
+                lista.forEach(
+            (valor,indice) => {
+                document.write("indice: "+indice+"Valor é: "+valor+ "<br>")
+            }           
+        );
+            document.write("<hr>")
+
+            }
 
       </script>
+
 
 </body>
 </html>

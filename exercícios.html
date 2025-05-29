@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Exercícios com Listas</title>
+</head>
+
+<body>
+
+  <h1>Resultados dos Exercícios com Listas</h1>
+  <div id="resultado"></div>
+
+  <script>
+    function mostrar(titulo, conteudo) {
+      document.getElementById("resultado").innerHTML += "<h3>" + titulo + "</h3><p>" + conteudo + "</p>";
+    }
+
+
+    // 1. Lista de cores com 3 cores
+    var cores = ["vermelho", "azul", "verde"];
+    mostrar("1. Lista inicial de cores", cores.join("<br>"));
+
+
+    // 2. Adiciona "amarelo" no final
+    cores.push("amarelo");
+    mostrar("<hr>2. Após adicionar 'amarelo'", cores.join("<br>"));
+
+
+    // 3. Remove a última cor
+    cores.pop();
+    mostrar("<hr>3. Após remover a última cor", cores.join("<br>"));
+
+
+    // 4. Adiciona "preto" no começo
+    cores.unshift("preto");
+    mostrar("<hr>4. Após adicionar 'preto' no início",    cores.join("<br>"));
+
+
+    // 5. Remove o primeiro item
+    cores.shift();
+    mostrar("<hr>5. Após remover o primeiro item", cores.join("<br>"));
+
+
+
+
+    // 6. Inverte a lista
+    cores.reverse();
+    mostrar("<hr>6. Lista invertida", cores.join("<br>"));
+
+
+    // 7. Lista de números
+    var numeros = [1, 2, 3];
+    numeros.push(4);
+    numeros.unshift(0);
+    numeros.reverse();
+    mostrar("<hr>7. Lista de números modificada", numeros.join("<br>"));
+
+
+    // 8. Lista de tarefas
+    var tarefas = [];
+    tarefas.push("Estudar");
+    tarefas.push("Ler");
+    tarefas.push("Caminhar");
+    tarefas.pop();
+    mostrar("<hr>8. Lista de tarefas", tarefas.join("<br>"));
+
+
+    // 9. Lista de nomes
+    var nomes = ["Lucas", "Marina"];
+    nomes.unshift("Ana", "Carlos");
+    nomes.pop();
+    mostrar("<hr>9. Lista de nomes", nomes.join("<br>"));
+
+
+    // 10. Lista de 5 a 1
+    var lista = [];
+    lista.push(3);
+    lista.unshift(2);
+    lista.push(4);
+    lista.unshift(1);
+    lista.push(5);
+    lista.reverse();
+    mostrar("<hr>10. Lista final [5, 4, 3, 2, 1]", lista.join("<br>"));
+
+
+    // 11. Lista de 1 a 75 e remover até 25
+    var numerosGrandes = [];
+    for (var i = 1; i <= 75; i++) {
+      numerosGrandes.push(i);
+    }
+    numerosGrandes.splice(0, 25); // Remove de 0 até 24
+    mostrar("<hr>11. Lista de 26 a 75", numerosGrandes.join("<br>"));
+    mostrar("<hr>12. Primeiro item deve ser 26", numerosGrandes[0]);
+
+  </script>
+  
+</body>
+</html>
